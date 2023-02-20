@@ -1,8 +1,8 @@
 回忆：域的代数扩张，正规扩张，可分扩张，Galois扩张。
 多项式的分裂域  Galois理论的基本定理
 
-#方程的根式解
-给定一个$\mathbb{Q}$-系数多项式$f(x)$，只用加减乘除，乘方，开方，把$f(x)$的根，表示成$f(x)$的系数的函数. 
+# 方程的根式解
+给定一个$ \mathbb{Q} $-系数多项式$f(x)$，只用加减乘除，乘方，开方，把$f(x)$的根，表示成$f(x)$的系数的函数. 
 
 $f(x)=ax^2+bx+c$     $x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$  $a\neq 0$. 
 
@@ -11,7 +11,7 @@ $f(x)=ax^3+bx^2+cx+d, \quad a\neq 0$.
 $x^3-d=0$   $x_1= \sqrt[3]{d}, x_2 = x_1 \omega,  x_3=x_1 \omega^2$,    $\omega = -\frac{1}{2}+\frac{\sqrt{-3}}{2}$.    
 
 
-#分圆域
+# 分圆域
 先研究：$x^3-1$  {$x^n-1$} 在$F=\mathbb{Q}$上的分裂域$E$, 问Gal$(E/F)=?$     已知Gal$(E/F)$的阶，等于域扩张$[E:F]$的次数.   $E/F$是一个单代数扩张，$E=F(\omega)$.
 
 {$E=F(\zeta_n)$, $\zeta_n$是一个本原$n$-次单位根, 例如$\zeta_n = \exp(\frac{2\pi \sqrt{-1}}{n})$}  
@@ -30,7 +30,7 @@ $x^3-1=(x-1)(x^2+x+1)=(x-1)(x-\omega)(x-\omega^2)$, $\omega=\zeta_3$.
 定理：设$E$是$x^n-1$在$F=\mathbb{Q}$上的分裂域，那么$E=F(\zeta_n)$, 而且Gal$(E/F)$与$\mathbb{Z}/n\mathbb{z}$的单位群$U(\mathbb{Z}/n \mathbb{Z}) = (\mathbb{Z}/n \mathbb{Z})^\times = \{a \mid 1\leq a \leq n, (a, n)=1\}$同构. 具体地，$a \in (\mathbb{Z}/n\mathbb{Z})^\times$对应于$\zeta_n \mapsto \zeta_n^a$. 
 
 
-*定义*：
+**定义**：
 1. 单（一个）根式扩张：$n=[K:F]$, 如果$\exists \alpha \in K$, st.  $K=F(\alpha), \alpha^n \in F$. 则称K/F是单根式扩张
 
 2. 根式扩张：设K/F是一个有限扩张，如果可以找到中间域
@@ -42,7 +42,7 @@ $F=F_0 \subset F_1 \subset \cdots \subset F_m=K$    （根式扩张链）
 
 目标是理解Galois的**定理**：设域$F$特征$0$. 又设$p(x)$是系数在$F$上的多项式, 它在$F$上的分裂域是$E$. 那么$p(x)$在$F$上可以用根式求解 当且仅当 Gal$(E/F)$是一个可解群. 
 
-*例子*：$x^3-2$     $a=\sqrt[3]{2}, a\omega, a\omega^2$  是它的三个根. 它在$F=\mathbb{Q}$上的分裂域是$E=F(\omega, a)$.    记 $F_1=F(\omega)=\mathbb{Q}(\sqrt{-3})$.       
+**例子**：$x^3-2$     $a=\sqrt[3]{2}, a\omega, a\omega^2$  是它的三个根. 它在$F=\mathbb{Q}$上的分裂域是$E=F(\omega, a)$.    记 $F_1=F(\omega)=\mathbb{Q}(\sqrt{-3})$.       
 
 可知
 
@@ -68,7 +68,7 @@ $s(\zeta, \theta) \neq (\zeta, \theta)$  $s((\zeta, \theta)^p)=(\zeta, \theta)^p
 
 
 ----------------
-#3次方程求根公式
+# $3$ 次方程求根公式
 在$F=\mathbb{Q}$上讨论三次方程求根公式 $f(x)=x^3+t_1x^2+t_2x+t_3$.
 
 $F_1=F(t_1, t_2, t_3)$  
@@ -102,7 +102,7 @@ $\beta_3 = \frac{1}{3}(\omega^{-2}(\omega, \beta_1)+ \omega^{-1}(\omega^2, \beta
 就能求出$\beta_1, \beta_2, \beta_3$. 如果取其它配对，算出来的根，只差了一个轮换. 
 
 --------------------
-继续 #分圆域
+继续 # 分圆域
 
 定义: 设$\zeta_n$是任意一个本原$n$-次单位根.  $n$-次分圆域定义为$\mathbb{Q}(\zeta_n)$. 
 
@@ -114,12 +114,12 @@ Galois群同构于$(\mathbb{Z}/n\mathbb{Z})^\times$, $a \in (\mathbb{Z}/n\mathbb
 
 证明：$\sum_{j=1}^5\cos\frac{2j\pi}{5}$是一个有理数  
 
-定义：极大实子域  $\mathbb{Q}(\zeta_n+\zeta_n^{-1})=\mathbb{Q}(\cos(\frac{2\pi}{n})) \; (n \geq 3)$  , 它是$\mathbb{Q}$的$\phi(n)/2$次扩张. 
+**定义**：极大实子域  $\mathbb{Q}(\zeta_n+\zeta_n^{-1})=\mathbb{Q}(\cos(\frac{2\pi}{n})) \; (n \geq 3)$  , 它是$\mathbb{Q}$的$\phi(n)/2$次扩张. 
 
 
 **Kronecker - Weber theorem**: 所有的Abelian扩张，都包含于某个分圆扩张当中. 
 
-#有限域
+# 有限域
 1. $p$是个素数: $\mathbb{F}_p=\{\bar{0}, \bar{1}, \ldots, \overline{p-1}\}$, 即环$\mathbb{Z}/p$有域的结构
 2. 定理：如果$q=p^n$, 那么$\mathbb{F}_q$必定同构于$\mathbb{F}_p[x]/(x^{q^n}-x)$.  
    {上课时这里讲错了，已更正}
