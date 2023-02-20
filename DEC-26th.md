@@ -2,17 +2,18 @@
 多项式的分裂域  Galois理论的基本定理
 
 # 方程的根式解
-给定一个$ \mathbb{Q} $-系数多项式$f(x)$，只用加减乘除，乘方，开方，把$f(x)$的根，表示成$f(x)$的系数的函数. 
+给定一个 $\mathbb{Q}$-系数多项式 $f(x)$，只用加减乘除，乘方，开方，把 $f(x)$ 的根，表示成 $f(x)$ 的系数的函数. 
 
-$f(x)=ax^2+bx+c$     $x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$  $a\neq 0$. 
+$f(x)=ax^2+bx+c=0 \Longrightarrow x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}, \; a\neq 0$. 
 
 $f(x)=ax^3+bx^2+cx+d, \quad a\neq 0$.  
 
-$x^3-d=0$   $x_1= \sqrt[3]{d}, x_2 = x_1 \omega,  x_3=x_1 \omega^2$,    $\omega = -\frac{1}{2}+\frac{\sqrt{-3}}{2}$.    
+$x^3-d=0 \Longrightarrow x_1= \sqrt[3]{d}, x_2 = x_1 \omega,  x_3=x_1 \omega^2, \omega = -\frac{1}{2}+\frac{\sqrt{-3}}{2}$.    
 
 
 # 分圆域
-先研究：$x^3-1$  {$x^n-1$} 在$F=\mathbb{Q}$上的分裂域$E$, 问Gal$(E/F)=?$     已知Gal$(E/F)$的阶，等于域扩张$[E:F]$的次数.   $E/F$是一个单代数扩张，$E=F(\omega)$.
+先研究：$x^3-1 \, (x^n-1)$ 在 $F=\mathbb{Q}$ 上的分裂域 $E$, 问 Gal$(E/F)=?$     已知 Gal$(E/F)$的阶，等于域扩张 $[E:F]$的次数. 
+$E/F$是一个单代数扩张，$E=F(\omega)$.
 
 {$E=F(\zeta_n)$, $\zeta_n$是一个本原$n$-次单位根, 例如$\zeta_n = \exp(\frac{2\pi \sqrt{-1}}{n})$}  
 
@@ -23,7 +24,7 @@ $x^3-1=(x-1)(x^2+x+1)=(x-1)(x-\omega)(x-\omega^2)$, $\omega=\zeta_3$.
 
 而$x^2+x+1$在$\mathbb{R}$上不可约，所以在$F=\mathbb{Q}$上也不可约 。 它就是$\omega$在$F$上的极小多项式。{需要证明$\Phi_n(x)$在$\mathbb{Q}$上不可约， 从而$\zeta_n$在$F$上的极小多项式就是$\Phi_n(x)$. }
 
-所以$E/F$是二维{$\phi(n)$维}$F$-线性空间，所以Gal$(E/F)$的非单位元$s$，一定是把$E$的两个$F$-基向量对换. {Galois群的非单位元，置换$E$的$F$-基向量.}
+所以 $E/F$是二维{$\phi(n)$维}$F$-线性空间，所以Gal$(E/F)$的非单位元$s$，一定是把$E$的两个$F$-基向量对换. {Galois群的非单位元，置换$E$的$F$-基向量.}
 
 可以有更好的描述：$E$的两个$F$-基向量是$\omega, \omega^2$, 那么$s(\omega)=\omega^2, s(\omega^2)=\omega = \omega^4$. 
 
